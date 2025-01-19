@@ -1,4 +1,5 @@
 tag @s remove race.Dragonborn
+attribute @s scale modifier remove frce:dragonborn.height
 attribute @s burning_time modifier remove dragonborn.noburn
 
 tag @s remove race.Dwarf
@@ -15,6 +16,7 @@ attribute @s entity_interaction_range modifier remove frce:race.fae.entity.reach
 attribute @s block_break_speed modifier remove frce:race.fae.block.break.speed
 attribute @s gravity modifier remove frce:race.fae.gravity
 attribute @s attack_damage modifier remove frce:race.fae.attack
+attribute @s sneaking_speed modifier remove frce:race.fae.sneak.speed
 
 tag @s remove race.Giant
 attribute @s scale modifier remove frce:race.giant.height
@@ -24,7 +26,6 @@ attribute @s entity_interaction_range modifier remove frce:race.giant.entity.rea
 attribute @s block_break_speed modifier remove frce:race.giant.block.break.speed
 attribute @s attack_damage modifier remove frce:race.giant.attack
 attribute @s jump_strength modifier remove frce:race.giant.jump.strength
-attribute @s sneaking_speed modifier remove frce:race.giant.sneak
 attribute @s movement_speed modifier remove frce:race.giant.movespeed
 
 tag @s remove race.Goblin
@@ -40,6 +41,7 @@ tag @s remove race.Merson
 attribute @s water_movement_efficiency modifier remove frce:race.merson.water
 attribute @s submerged_mining_speed modifier remove frce:race.merson.water.mining
 attribute @s burning_time modifier remove frce:race.merson.fire.time 
+attribute @s oxygen_bonus modifier remove frce:race.merson.oxy
 
 tag @s remove race.Orc
 attribute @s scale modifier remove frce:race.orc.height
