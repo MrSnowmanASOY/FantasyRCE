@@ -1,9 +1,6 @@
 function frce:reset_race
-tellraw @s {"color":"gold","text":"You are now a Orc"}
-tellraw @s "| As a Orc you have"
-tellraw @s "|-----------------------------"
 tag @s add race.Orc
-attribute @s minecraft:scale modifier add race_orc 1 add_multiplied_base
-tellraw @s "| Height of 4 blocks"
-attribute @s minecraft:block_interaction_range modifier add race_orc_bonus_block_reach 1 add_multiplied_base
-tellraw @s "| 9 block reach"
+attribute @s minecraft:scale modifier add frce:race.orc.height 0.333333373 add_value
+attribute @s minecraft:block_interaction_range modifier add frce:race.orc.block.reach 1 add_multiplied_base
+attribute @s minecraft:entity_interaction_range modifier add frce:race.orc.entity.reach 1 add_multiplied_base
+attribute @s minecraft:attack_damage modifier add frce:race.orc.attack 0.15 add_multiplied_base

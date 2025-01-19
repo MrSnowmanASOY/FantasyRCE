@@ -1,9 +1,9 @@
 function frce:reset_race
-tellraw @s {"color":"gold","text":"You are now a Fae"}
-tellraw @s "| As a Fae you have"
-tellraw @s "|-----------------------------"
 tag @s add race.Fae
-attribute @s minecraft:scale modifier add race_fae -0.5 add_multiplied_base
-tellraw @s "| Height of 1 block"
-attribute @s minecraft:block_interaction_range modifier add race_fae_impeaded_block_reach -0.5 add_multiplied_base
-tellraw @s "| 2.25 block reach"
+attribute @s minecraft:scale modifier add frce:race.fae.height -0.5 add_multiplied_base
+attribute @s minecraft:block_interaction_range modifier add frce:race.fae.block.reach -0.5 add_multiplied_base
+attribute @s minecraft:entity_interaction_range modifier add frce:race.fae.entity.reach -0.5 add_multiplied_base
+attribute @s minecraft:block_break_speed modifier add frce:race.fae.block.break.speed -0.20 add_multiplied_base
+attribute @s minecraft:gravity modifier add frce:race.fae.gravity -0.5 add_multiplied_base
+attribute @s minecraft:fall_damage_multiplier modifier add frce:race.fae.fall.negation -1 add_multiplied_base
+attribute @s minecraft:attack_damage modifier add frce:race.fae.attack -0.10 add_multiplied_base

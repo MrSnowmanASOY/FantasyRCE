@@ -1,9 +1,7 @@
 function frce:reset_race
-tellraw @s {"color":"gold","text":"You are now a Goblin"}
-tellraw @s "| As a Goblin you have"
-tellraw @s "|-----------------------------"
 tag @s add race.Goblin
-attribute @s minecraft:scale modifier add race_goblin -0.3 add_multiplied_base
-tellraw @s "| Height of 1.2 blocks"
-attribute @s minecraft:block_interaction_range modifier add race_goblin_impeaded_block_reach -0.3 add_multiplied_base
-tellraw @s "| 3.15 block reach"
+attribute @s minecraft:scale modifier add frce:race.goblin.height -0.35 add_multiplied_base
+attribute @s minecraft:block_interaction_range modifier add frce:race.goblin.block.reach -0.3 add_multiplied_base
+attribute @s minecraft:entity_interaction_range modifier add frce:race.goblin.entity.reach -0.3 add_multiplied_base
+attribute @s minecraft:attack_damage modifier add frce:race.goblin.attack -0.10 add_multiplied_base
+attribute @s sneaking_speed modifier add frce:race.goblin.sneak.speed 1 add_multiplied_base

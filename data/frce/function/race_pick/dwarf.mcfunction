@@ -1,9 +1,6 @@
 function frce:reset_race
-tellraw @s {"color":"gold","text":"You are now a Dwarf"}
-tellraw @s "| As a Dwarf you have"
-tellraw @s "|-----------------------------"
 tag @s add race.Dwarf
-attribute @s minecraft:scale modifier add race_dwarf -0.15 add_multiplied_base
-tellraw @s "| Height of 1.7 blocks"
-attribute @s minecraft:block_interaction_range modifier add race_dwarf_impeaded_block_reach -0.15 add_multiplied_base
-tellraw @s "| 3.825 block reach"
+attribute @s minecraft:scale modifier add frce:race.dwarf.height -0.15 add_multiplied_base
+attribute @s minecraft:block_interaction_range modifier add frce:race.dwarf.block.reach -0.15 add_multiplied_base
+attribute @s minecraft:entity_interaction_range modifier add frce:race.dwarf.entity.reach -0.15 add_multiplied_base
+attribute @s minecraft:block_break_speed modifier add frce:race.dwarf.block.break.speed 0.35 add_multiplied_base
