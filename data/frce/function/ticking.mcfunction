@@ -30,4 +30,7 @@ execute as @a[scores={race.picker=6}] run function frce:race_pick/human
 execute as @a[scores={race.picker=7}] run function frce:race_pick/merson
 execute as @a[scores={race.picker=8}] run function frce:race_pick/orc
 execute as @a[scores={race.picker=9}] run function frce:race_pick/teifling
-execute as @a[scores={race.picker=10..}] run function frce:allow_race_selection
+execute as @a[scores={race.picker=10}] run function frce:race_pick/harpy
+execute as @a[scores={race.picker=11..}] run function frce:allow_race_selection
+
+execute as @a[scores={race.picker=1..}] run function frce:allow_race_selection

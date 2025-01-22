@@ -8,3 +8,5 @@ scoreboard objectives add player.lifetime minecraft.custom:minecraft.time_since_
 scoreboard objectives add race.picker trigger
 scoreboard objectives add race.selected dummy
 scoreboard objectives add playtime minecraft.custom:minecraft.play_time
+scoreboard objectives add frce.settings dummy
+scoreboard players add inf.race.pick frce.settings 0

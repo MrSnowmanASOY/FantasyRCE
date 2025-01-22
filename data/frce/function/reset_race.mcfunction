@@ -27,6 +27,7 @@ attribute @s block_break_speed modifier remove frce:race.giant.block.break.speed
 attribute @s attack_damage modifier remove frce:race.giant.attack
 attribute @s jump_strength modifier remove frce:race.giant.jump.strength
 attribute @s movement_speed modifier remove frce:race.giant.movespeed
+attribute @s step_height modifier remove frce:race.giant.step.height 
 
 tag @s remove race.Goblin
 attribute @s scale modifier remove frce:race.goblin.height

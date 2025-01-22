@@ -9,3 +9,4 @@ attribute @s minecraft:jump_strength modifier add frce:race.giant.jump.strength 
 attribute @s minecraft:attack_damage modifier add frce:race.giant.attack 0.25 add_multiplied_base
 attribute @s minecraft:safe_fall_distance modifier add frce:race.giant.fall.reduction 7 add_value
 attribute @s movement_speed modifier add frce:race.giant.movespeed 0.5 add_multiplied_base
+attribute @s step_height modifier add frce:race.giant.step.height 1 add_multiplied_base
