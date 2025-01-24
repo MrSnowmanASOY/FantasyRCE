@@ -1,6 +1,6 @@
 tag @s remove race.Dragonborn
 attribute @s scale modifier remove frce:dragonborn.height
-attribute @s burning_time modifier remove dragonborn.noburn
+attribute @s burning_time modifier remove frce:dragonborn.noburn
 
 tag @s remove race.Dwarf
 attribute @s scale modifier remove frce:race.dwarf.height
