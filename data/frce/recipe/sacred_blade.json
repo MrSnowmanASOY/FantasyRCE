@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:iron_sword",
+    "addition": [
+      "minecraft:netherite_scrap"
+    ],
+    "template": "minecraft:ominous_bottle",
+    "result": {
+      "id": "minecraft:iron_sword",
+      "components": {
+        "minecraft:attribute_modifiers": {
+          "modifiers": [],
+          "show_in_tooltip": false
+        },
+        "minecraft:unbreakable": {
+          "show_in_tooltip": false
+        },
+        "minecraft:max_damage": 1,
+        "minecraft:item_name": "[{\"color\":\"red\",\"text\":\"Sacrificial Dagger\"}]",
+        "minecraft:lore": [
+          "[{\"color\":\"dark_red\",\"text\":\"This is gonna hurt...\"}]"
+        ],
+        "minecraft:consumable": {
+          "consume_seconds": 5,
+          "animation": "spear",
+          "sound": "minecraft:entity.sheep.shear",
+          "has_consume_particles": false,
+          "on_consume_effects": [
+            {
+              "type": "minecraft:apply_effects",
+              "effects": [
+                {
+                  "id": "minecraft:instant_damage",
+                  "amplifier": 1,
+                  "duration": 1,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                {
+                  "id": "minecraft:nausea",
+                  "amplifier": 0,
+                  "duration": 100,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "amplifier": 0,
+                  "duration": 60,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:entity.allay.death"
+            }
+          ]
+        },
+        "minecraft:custom_data": "{\"frce\":\"sacred_blade\"}"
+      },
+      "count": 1
+    }
+  }

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+      "requirement": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": "diamond",
+              "components": {
+                "custom_data": {"frce":"generic_race_changer"}
+              }
+            }
+          }
+      }
+  },
+  "rewards": {
+      "function": "frce:race_repick/generic"
+  }
+}

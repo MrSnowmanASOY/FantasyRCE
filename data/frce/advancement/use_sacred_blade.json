@@ -1,0 +1,18 @@
+{
+  "criteria": {
+      "requirement": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": "iron_sword",
+              "components": {
+                "custom_data": {"frce":"sacred_blade"}
+              }
+            }
+          }
+      }
+  },
+  "rewards": {
+      "function": "frce:race_repick/harpy"
+  }
+}
