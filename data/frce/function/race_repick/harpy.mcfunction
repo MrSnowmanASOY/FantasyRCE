@@ -1,4 +1,7 @@
 advancement revoke @s only frce:use_sacred_blade
-clear @s minecraft:elytra[custom_name='[{"color":"#fa9bab","text":"Harpy Wings"}]']
-function frce:allow_race_selection
-tellraw @s [{"color":"red","text":"Your wings have been removed"}]
+execute as @s[tag=race.Harpy] run tellraw @s [{"color":"red","text":"Your wings have been removed"}]
+execute as @s[tag=race.Harpy] at @s run summon item ~ ~ ~ {PickupDelay:0,Tags:["severed.Wings"],CustomName:'[{"color":"#C21111","text":"A "},{"color":"#C61010","text":"H"},{"color":"#C91010","text":"a"},{"color":"#CD0F0F","text":"r"},{"color":"#D00F0F","text":"p"},{"color":"#D40E0E","text":"y"},{"color":"#D70E0E","text":"\'"},{"color":"#DB0D0D","text":"s "},{"color":"#DE0D0D","text":"W"},{"color":"#E20C0C","text":"i"},{"color":"#E50C0C","text":"n"},{"color":"#E90B0B","text":"g"},{"color":"#A30707","text":"s"}]',Item:{id:"minecraft:elytra",count:1,components:{"minecraft:lore":['{"color":"dark_red","text":"The severed wings of a harpy."}'],"minecraft:max_damage":40,"minecraft:damage":39,"minecraft:rarity":"epic","minecraft:item_name":'[{"color":"#C21111","shadow_color":-8776684,"text":"A "},{"color":"#C61010","shadow_color":-8776684,"text":"H"},{"color":"#C91010","shadow_color":-8776684,"text":"a"},{"color":"#CD0F0F","shadow_color":-8776684,"text":"r"},{"color":"#D00F0F","shadow_color":-8776684,"text":"p"},{"color":"#D40E0E","shadow_color":-8776684,"text":"y"},{"color":"#D70E0E","shadow_color":-8776684,"text":"\'"},{"color":"#DB0D0D","shadow_color":-8776684,"text":"s "},{"color":"#DE0D0D","shadow_color":-8776684,"text":"W"},{"color":"#E20C0C","shadow_color":-8776684,"text":"i"},{"color":"#E50C0C","shadow_color":-8776684,"text":"n"},{"color":"#E90B0B","shadow_color":-8776684,"text":"g"},{"color":"#F00A0A","shadow_color":-8776684,"text":"s"}]'}}}
+execute as @s[tag=!race.Harpy] run tellraw @s [{"color":"red","text":"Quite the back scratch."}]
+tag @s[tag=race.Harpy] add removed.Wings
+execute as @s[tag=race.Harpy] run function frce:reset_race
+execute as @s[tag=!race.Harpy] run function frce:allow_race_selection

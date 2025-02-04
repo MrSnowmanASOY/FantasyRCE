@@ -1,0 +1,61 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:lava_bucket",
+    "addition": [
+      "minecraft:golden_apple"
+    ],
+    "template": "minecraft:ominous_bottle",
+    "result": {
+      "id": "minecraft:amethyst_shard",
+      "components": {
+        "item_model": "lava_bucket",
+        "minecraft:item_name": "[{\"color\":\"red\",\"text\":\"Totally not a bucket of lava.\"}]",
+        "minecraft:lore": [
+          "[{\"color\":\"blue\",\"text\":\"Forbiden merson drink.\"}]"
+        ],
+        "minecraft:consumable": {
+          "consume_seconds": 5,
+          "animation": "drink",
+          "sound": "minecraft:block.lava.pop",
+          "has_consume_particles": true,
+          "on_consume_effects": [
+            {
+              "type": "minecraft:apply_effects",
+              "effects": [
+                {
+                  "id": "minecraft:instant_damage",
+                  "amplifier": 1,
+                  "duration": 1,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                {
+                  "id": "minecraft:nausea",
+                  "amplifier": 0,
+                  "duration": 100,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "amplifier": 0,
+                  "duration": 60,
+                  "ambient": false,
+                  "show_particles": false,
+                  "show_icon": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:play_sound",
+              "sound": "minecraft:entity.fishing_bobber.splash"
+            }
+          ]
+        },
+        "minecraft:custom_data": "{\"frce\":\"not_lava\"}"
+      },
+      "count": 1
+    }
+  }

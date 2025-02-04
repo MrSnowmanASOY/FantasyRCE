@@ -63,4 +63,7 @@ attribute @s minecraft:block_interaction_range modifier remove frce:race.harpy.b
 attribute @s minecraft:entity_interaction_range modifier remove frce:race.harpy.entity.reach
 clear @s minecraft:elytra[custom_name='[{"color":"#fa9bab","text":"Harpy Wings"}]']
 
-scoreboard players set @s race.selected 1
+scoreboard players set @s race.picker 0
+scoreboard players set @s race.selected 0
+
+tag @s remove removed.Wings

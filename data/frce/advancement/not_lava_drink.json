@@ -1,0 +1,18 @@
+{
+  "criteria": {
+      "requirement": {
+          "trigger": "minecraft:consume_item",
+          "conditions": {
+            "item": {
+              "items": "amethyst_shard",
+              "components": {
+                "custom_data": {"frce":"not_lava"}
+              }
+            }
+          }
+      }
+  },
+  "rewards": {
+      "function": "frce:race_repick/merson"
+  }
+}
