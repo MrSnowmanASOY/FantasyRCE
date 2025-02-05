@@ -9,4 +9,8 @@ scoreboard objectives add race.picker trigger
 scoreboard objectives add race.selected dummy
 scoreboard objectives add playtime minecraft.custom:minecraft.play_time
 scoreboard objectives add frce.settings dummy
+scoreboard objectives add frce.menu trigger
+
 scoreboard players add inf.race.pick frce.settings 0
+
+gamerule sendCommandFeedback false

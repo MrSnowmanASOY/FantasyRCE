@@ -12,6 +12,7 @@
           "modifiers": [],
           "show_in_tooltip": false
         },
+        "rarity":"epic",
         "minecraft:unbreakable": {
           "show_in_tooltip": false
         },
@@ -23,43 +24,8 @@
         "minecraft:consumable": {
           "consume_seconds": 5,
           "animation": "spear",
-          "sound": "minecraft:entity.sheep.shear",
           "has_consume_particles": false,
-          "on_consume_effects": [
-            {
-              "type": "minecraft:apply_effects",
-              "effects": [
-                {
-                  "id": "minecraft:instant_damage",
-                  "amplifier": 1,
-                  "duration": 1,
-                  "ambient": false,
-                  "show_particles": false,
-                  "show_icon": false
-                },
-                {
-                  "id": "minecraft:nausea",
-                  "amplifier": 0,
-                  "duration": 100,
-                  "ambient": false,
-                  "show_particles": false,
-                  "show_icon": false
-                },
-                {
-                  "id": "minecraft:blindness",
-                  "amplifier": 0,
-                  "duration": 60,
-                  "ambient": false,
-                  "show_particles": false,
-                  "show_icon": false
-                }
-              ]
-            },
-            {
-              "type": "minecraft:play_sound",
-              "sound": "minecraft:entity.allay.death"
-            }
-          ]
+          "sound": "minecraft:entity.sheep.shear"
         },
         "minecraft:custom_data": "{\"frce\":\"sacred_blade\"}"
       },
