@@ -21,4 +21,6 @@ execute as @a[tag=race.Merson,scores={player.lifetime=1}] run function frce:race
 execute as @a[tag=race.Orc,scores={player.lifetime=1}] run function frce:race_pick/orc
 execute as @a[tag=race.Teifling,scores={player.lifetime=1}] run function frce:race_pick/teifling
 
+execute as @a[tag=removed.Wings,scores={race.selected=0}] if items entity @s armor.chest elytra[custom_data={"frce":"severed.Wings"}] run function frce:harpy_regen
+
 execute as @a run function frce:menu/menu_nav

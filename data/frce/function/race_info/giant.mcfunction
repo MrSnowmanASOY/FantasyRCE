@@ -1,6 +1,6 @@
 scoreboard players set @s race.picker 4
 
-function frce:prefabs/selection_header
+function frce:prefabs/header
 
 tellraw @s [{"color":"dark_gray","text":"|  "},{"color":"gold","text":"Giant Info"}]
 

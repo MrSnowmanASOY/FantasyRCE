@@ -5,12 +5,12 @@ execute as @a[scores={race.picker=4,race.selected=0}] run function frce:race_pic
 execute as @a[scores={race.picker=5,race.selected=0}] run function frce:race_pick/goblin
 
 execute as @a[scores={race.picker=6,race.selected=0},tag=!removed.Wings] run function frce:race_pick/harpy
-execute as @a[scores={race.picker=10,race.selected=0},tag=removed.Wings] run function frce:cant_pick/harpy
-execute as @a[tag=removed.Wings,tag=!race.Dragonborn,tag=!race.Dwarf,tag=!race.Fae,tag=!race.Giant,tag=!race.Goblin,tag=!race.Human,tag=!race.Merson,tag=!race.Orc,tag=!race.Teifling,tag=!race.Harpy] if items entity @s armor.chest elytra[custom_data={"frce":"severed.Wings"}] run function frce:harpy_regen
+execute as @a[scores={race.picker=6,race.selected=0},tag=removed.Wings] run function frce:cant_pick/harpy
 
 execute as @a[scores={race.picker=7,race.selected=0}] run function frce:race_pick/human
 execute as @a[scores={race.picker=8,race.selected=0}] run function frce:race_pick/merson
 execute as @a[scores={race.picker=9,race.selected=0}] run function frce:race_pick/orc
 execute as @a[scores={race.picker=10,race.selected=0}] run function frce:race_pick/teifling
 
-function frce:menu/locked_race_menu
+execute as @s[scores={race.selected=1}] run function frce:menu/locked_race_menu
+execute as @s[scores={race.selected=0}] run function frce:menu/failed
