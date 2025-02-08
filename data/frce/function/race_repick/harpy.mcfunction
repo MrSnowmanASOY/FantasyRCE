@@ -10,5 +10,5 @@ effect give @s[tag=race.Harpy] nausea 10 0 true
 effect give @s[tag=race.Harpy] blindness 3 0 true
 playsound minecraft:entity.allay.death master @s[tag=race.Harpy] ~ ~ ~ 1 1 1
 tag @s[tag=race.Harpy] add removed.Wings
+execute as @s[tag=race.Harpy] run function frce:allow_race_selection
 execute as @s[tag=race.Harpy] run function frce:reset_race
-execute as @s[tag=!race.Harpy] run function frce:allow_race_selection
