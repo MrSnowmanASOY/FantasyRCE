@@ -1,4 +1,4 @@
-tellraw @a {"color":"gold","text":"Loaded FantasyRCE Base V0.24"}
+tellraw @a {"color":"gold","text":"Loaded FantasyRCE Base V0.25"}
 tellraw @a [{"color":"gold","text":"See any changes made on the "},{"color":"#74a6f1","text":"Github","clickEvent":{"action": "open_url","value":"https://github.com/MrSnowmanASOY/FantasyRCE"},"underlined":true}]
 scoreboard objectives add FRCECounters dummy
 scoreboard players set thetime.night FRCECounters 13000
